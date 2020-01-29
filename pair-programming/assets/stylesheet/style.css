@@ -46,69 +46,80 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+*{
+    box-sizing: border-box;
+}
 /* Main Styling */
-
-.container {
-    width: 1200px;
+.container{
+    width: 900px;
     margin: 0 auto;
 }
-.logo {
-    width: 180px;
+.heading{
+    font-size: 50px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.box1{
+    
+    width: 49%;
+    border-radius: 5px;
+    margin-bottom: 20px;
+   
+}
+.in-block{
     display: inline-block;
-  }
-  .logo h1 {
-    display: inline-block;
-    color: crimson;
-    font-size: 32px;
-  }
-  .nav-links{
-      float: right;
-  }
-  .nav-links a {
-    text-decoration: none;
-    color: black;
-    text-transform: uppercase;
-    font-size: 18px;
-    margin-left: 32px;
-  }
-  .hero{
-      padding: 150px 0;
-  }
-  .heading{
-      font-size: 24px;
-      font-weight: 600;
-      color: black;
-  }
-  .para{
-      margin: 20px 0;
-      font-size: 18px;
-      font-weight: 400;
-      width: 600px;
-      display: inline-block;
-  }
-  img{
-      display: inline-block;
-      align:right;
-  }
-  .left{
-    margin: 20px 0;
-    font-size: 18px;
-    font-weight: 400;
-    width: 600px;
+}
+.bg1{
+    background: #EA6D61;
+    border: 1px solid red;
+
+}
+.bg2{
+    background: #58EA93;
+    border: 1px solid green;
+}
+.float{
     float: left;
+}
+
+.para{
+    padding: 10px;
+    font-size: 18px;
+    line-height: 1.2;
+
+}
+/* .box2{
+    width: 300px;
+    background: #58EA93;
+    border-radius: 5px;
+    border: 1px solid red;
+    padding: 20px;
+    float: left;
+    margin-bottom: 20px;
+} */
+.clearfix:before, .clearfix:after {
+    content: "";
+    display: table;
   }
-  .right{
-      float: right;
+  .clearfix:after {
+    clear: both;
   }
-  .clr{
-      clear: both;
-  }
-  footer{
-      background: black;
-  }
-  .small{
-      color: white;
-      font-size: 22px;
-      text-align: center;
-      
+  /* .box3{
+      width: 300px;
+      background: #EA6D61;
+      border-radius: 5px;
+      border: 1px solid red;
+      padding: 20px;
+      margin-bottom: 20px;
+  } */
+  /* .box4{
+      width: 300px;
+      background:#58EA93 ;
+      border-radius: 5px;
+      border: 1px solid red;
+      padding: 20px;
+      float: left;
+  } */
+  .v-align{
+      vertical-align: top;
   }

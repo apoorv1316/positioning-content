@@ -46,69 +46,70 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-/* Main Styling */
-
-.container {
-    width: 1200px;
-    margin: 0 auto;
+*{
+    box-sizing: border-box;
 }
-.logo {
-    width: 180px;
-    display: inline-block;
-  }
-  .logo h1 {
-    display: inline-block;
-    color: crimson;
-    font-size: 32px;
-  }
-  .nav-links{
-      float: right;
-  }
-  .nav-links a {
+/* Main Styling */
+body{
+    line-height: 1.5;
+}
+.container{
+    max-width: 1300px;
+    margin: 0 auto;
+
+}
+.heading{
+    font-size: 30px;
+    font-weight: 500;
+    text-align: center;
+
+}
+.nav-bar{
+    margin-top: 20px;
+    padding-left: 20px;
+}
+.nav-bar a{
     text-decoration: none;
+    display: block;
+    padding: 5px 0px;
     color: black;
-    text-transform: uppercase;
-    font-size: 18px;
-    margin-left: 32px;
-  }
-  .hero{
-      padding: 150px 0;
-  }
-  .heading{
-      font-size: 24px;
-      font-weight: 600;
-      color: black;
-  }
-  .para{
-      margin: 20px 0;
-      font-size: 18px;
-      font-weight: 400;
-      width: 600px;
-      display: inline-block;
-  }
-  img{
-      display: inline-block;
-      align:right;
-  }
-  .left{
-    margin: 20px 0;
-    font-size: 18px;
-    font-weight: 400;
-    width: 600px;
+    cursor: default;
+  
+}
+.aside{
+    width: 25%;
     float: left;
+}
+.hero{
+    width: 50%;
+    float: left;
+}
+h2{
+    font-size: 26px;
+    font-weight: 300;
+   
+}
+.para{
+    width: 80%;
+    
+}
+.para-one{
+  padding-left: 30px;
+}
+.clearfix:before, .clearfix:after {
+    content: "";
+    display: table;
+ }
+.clearfix:after {
+    clear: both;
   }
-  .right{
+.aside-two{
+      width: 25%;
       float: right;
+ }
+.margin{
+      margin-bottom: 20px;
   }
-  .clr{
-      clear: both;
-  }
-  footer{
-      background: black;
-  }
-  .small{
-      color: white;
-      font-size: 22px;
-      text-align: center;
-      
+  .padding{
+      padding:25px 25px;
   }

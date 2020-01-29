@@ -46,15 +46,14 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-/* Main Styling */
-
+/*  */
 .container {
     width: 1200px;
     margin: 0 auto;
 }
 .logo {
     width: 180px;
-    display: inline-block;
+    float: left;
   }
   .logo h1 {
     display: inline-block;
@@ -71,44 +70,50 @@ table {
     font-size: 18px;
     margin-left: 32px;
   }
+  .clearfix:before, .clearfix:after {
+    content: "";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+  }
+  .col-1-1 {
+    width: 50%;
+    float: left;
+    padding: 0 16px;
+  }
   .hero{
-      padding: 150px 0;
-  }
-  .heading{
-      font-size: 24px;
-      font-weight: 600;
-      color: black;
-  }
-  .para{
-      margin: 20px 0;
-      font-size: 18px;
-      font-weight: 400;
-      width: 600px;
-      display: inline-block;
-  }
-  img{
-      display: inline-block;
-      align:right;
-  }
-  .left{
+    padding: 150px 0;
+}
+.heading{
+    font-size: 24px;
+    font-weight: 600;
+    color: black;
+}
+.para{
     margin: 20px 0;
     font-size: 18px;
     font-weight: 400;
     width: 600px;
-    float: left;
+    display: inline-block;
+}
+.col-1-2 {
+    width: 45%;
+    float: right;
+    
   }
-  .right{
-      float: right;
-  }
-  .clr{
-      clear: both;
-  }
-  footer{
-      background: black;
-  }
-  .small{
-      color: white;
-      font-size: 22px;
-      text-align: center;
-      
-  }
+  .responsive-img {
+    width: 100%;
+    padding: 10px;
+    border-radius: 7%;
+}
+footer{
+    background: black;
+}
+.small{
+    color: white;
+    font-size: 22px;
+    text-align: center;
+    
+}

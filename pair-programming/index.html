@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pair Programming</title>
+    <link rel="stylesheet" href="assets/stylesheet/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="heading">Side-By-Side Positioning Demo</h1>
+        </div>
+       
+    </header>
+    <main>
+        <section>
+            <div class="container">
+                <div>
+                    <div class="box1 v-align bg1 in-block">
+                        <p class="para">These two divs are positioned next to one another using display: inline-block</p>
+                    </div>
+                    <div class="box1 bg1 in-block">
+                        <p class="para">Notice the space between them.It occurs because of my carriage return in the HTML  which I've used to keep the code organized.I've used a reset to insure no elements should have any default margins or padding.(I did add a bottom margin to make it easier to read.)This space is actually a space character rendered just as it would be betwen two inline elements.</p>
+                     </div>
+                </div>
+                <div class="clearfix">
+                    <div class="box1 bg2 float">
+                        <p class="para">These two are positioned using float:<br>left</p>
+                    </div>
+                    <div class="box1 bg2 float">
+                        <p class="para">You can see that even though the elements are spaced in the code, the space is not actually rendered on the page.This may not be a huge  deal in these first examples, but...</p>
+                    </div>
+                </div>
+                    <div class="box1 bg1">
+                        <p class="para">What if I want my side-by-side elements to take up the full width  of the parent element? I can set the width of each to 50%, right?</p>
+                    </div>
+                    <div class="box1 bg1">
+                        <p class="para">Wrong because together, the two inline block elements will add up to 100% of the available width, but that doesn't account for the space between</p>
+                    </div>
+                    <div class="box1 bg2 float">
+                        <p class="para">If i do the same thing with floated elements...</p>
+                    </div>
+                    <div class="box1 bg2 float">
+                        <div class="para">The two elements are side-by-side just as I intended and fill the entire  width of the parent(which, in this case, is the same as the width of the viewport.</div>
+                    </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
